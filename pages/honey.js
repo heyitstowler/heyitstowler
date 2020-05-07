@@ -4,14 +4,14 @@ import Layout from '../components/layout'
 import Container from '../components/container'
 import Heading from '../components/Heading'
 
-export default function HomePage() {
+export default function BoardGames() {
   return (
     <Layout preview={false}>
       <Head>
-        <title>Hey, it's Towler!</title>
+        <title>Honey - heyitstowler</title>
       </Head>
       <Container>
-        <Heading rank={1}>Home</Heading>
+        <Heading rank={1}>Honey</Heading>
       </Container>
     </Layout>
   )

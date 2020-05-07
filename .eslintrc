@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80,
+        "tabWidth": 2,
+        "semi": false
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "globals": {
+      "React": "writable"
+    }
+  }
+}
