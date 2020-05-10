@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config()
 
 module.exports = {
@@ -8,5 +9,6 @@ module.exports = {
       process.env.NEXT_EXAMPLE_CMS_CONTENTFUL_ACCESS_TOKEN,
     NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN:
       process.env.NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
+    INSTAGRAM_ACCESS_TOKEN: process.env.INSTAGRAM_ACCESS_TOKEN,
   },
 }

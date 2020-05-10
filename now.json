@@ -3,13 +3,25 @@
     "NEXT_EXAMPLE_CMS_CONTENTFUL_SPACE_ID": "@next_example_contentful_space_id",
     "NEXT_EXAMPLE_CMS_CONTENTFUL_ACCESS_TOKEN": "@next_example_cms_contentful_access_token",
     "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@next_example_cms_contentful_preview_access_token",
-    "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_SECRET": "@next_example_cms_contentful_preview_secret"
+    "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_SECRET": "@next_example_cms_contentful_preview_secret",
+    "INSTAGRAM_ACCESS_TOKEN": "@instagram_access_token"
   },
   "build": {
     "env": {
       "NEXT_EXAMPLE_CMS_CONTENTFUL_SPACE_ID": "@next_example_contentful_space_id",
       "NEXT_EXAMPLE_CMS_CONTENTFUL_ACCESS_TOKEN": "@next_example_cms_contentful_access_token",
-      "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@next_example_cms_contentful_preview_access_token"
+      "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@next_example_cms_contentful_preview_access_token",
+      "NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_SECRET": "@next_example_cms_contentful_preview_secret",
+      "INSTAGRAM_ACCESS_TOKEN": "@instagram_access_token"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/*",
+      "headers": {
+        "Cache-Control": "max-age=3600"
+      },
+      "continue": true
+    }
+  ]
 }
